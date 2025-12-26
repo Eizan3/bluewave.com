@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>BlueWave Web Solutions | Siti Web Aziendali</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0b1120;
+      color: #e5e7eb;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)),
+      url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1920&q=80");
+      background-size: cover;
+      background-position: center;
+      padding: 120px 20px;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+      color: #60a5fa;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+    .logo .wave { font-size: 40px; vertical-align: middle; }
+    .logo .bluewave { font-size: 36px; color: #3b82f6; }
+    .logo .websolutions { display: block; font-size: 18px; color: #93c5fd; font-weight: normal; }
+
+    header h1 { font-size: 50px; margin-bottom: 15px; }
+    header p { font-size: 22px; max-width: 750px; margin: auto; }
+
+    section { max-width: 1100px; margin: auto; padding: 80px 20px; }
+    h2 { color: #60a5fa; font-size: 34px; margin-bottom: 30px; text-align: center; }
+
+    .service-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .service-card {
+      background-color: #111827;
+      border-radius: 18px;
+      overflow: hidden;
+      width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .service-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+      transition: transform 0.6s ease, opacity 0.6s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 22px rgba(0,0,0,0.4);
+    }
+
+    .service-card h3 { padding: 15px 20px 5px 20px; color: #60a5fa; font-size: 22px; }
+    .service-card p { padding: 0 20px 20px 20px; color: #e5e7eb; font-size: 16px; }
+
+    .price-box {
+      background-color: #111827;
+      border-radius: 18px;
+      padding: 25px;
+      margin-bottom: 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .price-box.visible {
+      opacity: 1;
+      transform: translateY(0);
+      transition: transform 0.6s ease, opacity 0.6s ease;
+    }
+
+    .price-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 22px rgba(0,0,0,0.4);
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      text-align: center;
+      padding: 90px 20px;
+      border-radius: 30px;
+      transition: transform 0.3s ease;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .cta.visible {
+      opacity: 1;
+      transform: translateY(0);
+      transition: transform 0.6s ease, opacity 0.6s ease;
+    }
+
+    .cta:hover { transform: scale(1.02); }
+    .cta a {
+      display: inline-block;
+      margin: 15px;
+      padding: 16px 40px;
+      background-color: white;
+      color: #1d4ed8;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 50px;
+      font-size: 18px;
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    }
+
+    .cta a:hover { background-color: #60a5fa; color: white; transform: translateY(-3px); }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #9ca3af;
+      font-size: 14px;
+      background-color: #020617;
+    }
+
+    footer a { color: #60a5fa; text-decoration: none; margin: 0 10px; }
+
+    .legal {
+      background-color: #020617;
+      border-radius: 20px;
+      padding: 40px;
+      margin-top: 40px;
+    }
+
+    @media(max-width: 960px){
+      .service-cards {flex-direction: column; align-items: center;}
+      .service-card {width: 90%;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <span class="wave">🌊</span> <span class="bluewave">BlueWave</span>
+    <span class="websolutions">Web Solutions</span>
+  </div>
+  <h1>Siti Web Professionali per Aziende</h1>
+  <p>Aiutiamo le aziende a crescere online con siti web moderni, professionali e pensati per ottenere clienti.</p>
+</header>
+
+<section>
+  <h2>I Nostri Servizi</h2>
+  <div class="service-cards">
+    <div class="service-card">
+      <h3>Incremento Fiducia</h3>
+      <p>Un sito professionale aumenta la credibilità e la fiducia dei clienti. Portfolio, testimonianze e contatto diretto via email o WhatsApp.</p>
+    </div>
+    <div class="service-card">
+      <h3>Design Moderno</h3>
+      <p>Grafica elegante e professionale per far risaltare la tua azienda. Template moderni, animazioni leggere e ottimizzazione immagini per velocità.</p>
+    </div>
+    <div class="service-card">
+      <h3>Siti Web Aziendali</h3>
+      <p>Creiamo siti web professionali con tutte le informazioni della tua azienda: orari, contatti, prodotti e portfolio. Design responsive, SEO base e facile aggiornamento.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>💰 Prezzi</h2>
+  <div class="price-box">
+    <h3>Prova Gratuita</h3>
+    <p>Realizziamo il tuo sito web in 1-2 settimane.</p>
+    <p>Se sei soddisfatto → paghi 200$</p>
+    <p>Se non sei soddisfatto → non paghi nulla.</p>
+    <p>Supporto completo via email o WhatsApp.</p>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Contattaci Ora</h2>
+  <p>Email o WhatsApp, rispondiamo velocemente.</p>
+  <a href="mailto:muhammadeizanirshad@gmail.com">Email</a>
+  <a href="https://wa.me/393512335389" target="_blank">WhatsApp</a>
+</section>
+
+<section id="privacy">
+  <h2>Privacy Policy</h2>
+  <div class="legal">
+    <p>BlueWave Web Solutions raccoglie dati come nome, email e numero di telefono esclusivamente per rispondere alle richieste dei clienti. Questi dati non vengono condivisi con terze parti.</p>
+    <p>Utilizziamo misure di sicurezza moderne per proteggere i dati degli utenti. Gli utenti possono richiedere la cancellazione dei loro dati contattando l'azienda via email o WhatsApp.</p>
+  </div>
+</section>
+
+<section id="terms">
+  <h2>Termini e Condizioni</h2>
+  <div class="legal">
+    <p>BlueWave Web Solutions offre servizi di creazione siti web aziendali. Il cliente ha diritto a una prova gratuita del sito.</p>
+    <p>Se il cliente è soddisfatto del risultato finale, paga 200$. In caso contrario, non è dovuto alcun pagamento.</p>
+    <p>BlueWave Web Solutions non è responsabile per contenuti forniti dal cliente e si riserva il diritto di rifiutare contenuti inappropriati.</p>
+  </div>
+</section>
+
+<section id="copyright">
+  <h2>Copyright</h2>
+  <div class="legal">
+    <p>© 2025 BlueWave Web Solutions. Tutti i contenuti, testi, design e struttura del sito sono protetti da copyright.</p>
+    <p>È vietata la copia o la riproduzione senza autorizzazione.</p>
+    <p>Fondatore: <strong>Muhammad Eizan Irshad</strong></p>
+  </div>
+</section>
+
+<footer>
+  © 2025 BlueWave Web Solutions<br><br>
+  <a href="#privacy">Privacy Policy</a> |
+  <a href="#terms">Termini & Condizioni</a> |
+  <a href="#copyright">Copyright</a>
+</footer>
+
+<script>
+  function revealElements() {
+    const elements = document.querySelectorAll(".service-card, .price-box, .cta");
+    const windowHeight = window.innerHeight;
+    elements.forEach(el => {
+      const top = el.getBoundingClientRect().top;
+      if (top < windowHeight - 100) {
+        el.classList.add("visible");
+      }
+    });
+  }
+  window.addEventListener("scroll", revealElements);
+  window.addEventListener("load", revealElements);
+</script>
+
+</body>
+</html>
